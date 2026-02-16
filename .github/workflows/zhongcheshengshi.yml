@@ -1,0 +1,19 @@
+name: zhongcheshengshi
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '46 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: zhongcheshengshi
+        env:
+          ig7: ${{ secrets.ig7 }}
+        run: |
+          echo $ig7 | jq -r .ldds1828 | /bin/bash
+          echo $rzgfc2 | jq -r .gvq5 | /bin/bash
+          echo $dwa411 | jq -r .mkk396 | /bin/bash
+
